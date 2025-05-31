@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliza Marie Abing - Creative Technologist & Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="#hero" class="navbar-brand">Eliza Marie Abing</a>
+            <div class="navbar-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="mobile-menu-toggle">
+                <svg class="icon-menu" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu-dropdown">
+            <div class="mobile-menu-links">
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+                <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="container hero-content animate-fade-in">
+                <h1 class="hero-title">
+                    <span class="text-primary">Innovate.</span> <span class="text-secondary-light">Develop.</span> <span class="text-primary">Transform.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Hello, I'm Eliza Marie Abing, a passionate Creative Technologist and aspiring Software Developer. I build intuitive digital solutions that bridge design and functionality.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn-primary">
+                        View My Projects
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container about-content">
+                <div class="about-image-container animate-fade-in">
+                    <img src="https://placehold.co/600x400/1E1E1E/00C9FF?text=Eliza+Marie+Abing" alt="Eliza Marie Abing" class="about-image">
+                </div>
+                <div class="about-text-content animate-fade-in">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="line-gradient"></div>
+                    <p class="about-paragraph">
+                        I'm Eliza Marie Abing, an incoming 3rd-year BSIT student based in Davao City, Philippines. My academic journey is building a strong foundation in information technology, particularly in software development and digital systems. I am constantly exploring new technologies and frameworks to create impactful digital experiences.
+                    </p>
+                    <p class="about-paragraph">
+                        Beyond my studies, I have gained practical experience through various projects, focusing on delivering clean code and user-friendly interfaces. My passion lies in crafting elegant solutions to complex problems, and I am driven by the desire to innovate and contribute to the ever-evolving tech landscape.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container services-content">
+                <h2 class="section-title">What I Offer</h2>
+                <div class="line-gradient"></div>
+                <p class="section-subtitle">
+                    I combine my technical skills with a creative mindset to deliver comprehensive digital solutions.
+                </p>
+
+                <div class="services-grid">
+                    <div class="service-card animate-fade-in">
+                        <div class="service-icon">
+                            <svg class="icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-1.75-3M10 20l4-16m4 4l4 4-4 4M6 16L2 12l4-4"></path></svg>
+                        </div>
+                        <h3 class="service-title-card">Web Development</h3>
+                        <p class="service-description">
+                            Building responsive and dynamic web applications using modern frameworks and best practices.
+                        </p>
+                    </div>
+
+                    <div class="service-card animate-fade-in" style="animation-delay: 0.1s;">
+                        <div class="service-icon">
+                            <svg class="icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="service-title-card">Mobile App Development</h3>
+                        <p class="service-description">
+                            Crafting intuitive and high-performance mobile applications for various platforms.
+                        </p>
+                    </div>
+
+                    <div class="service-card animate-fade-in" style="animation-delay: 0.2s;">
+                        <div class="service-icon">
+                            <svg class="icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                        </div>
+                        <h3 class="service-title-card">UI/UX Design</h3>
+                        <p class="service-description">
+                            Designing engaging and user-centered interfaces that provide seamless experiences.
+                        </p>
+                    </div>
+
+                    <div class="service-card animate-fade-in" style="animation-delay: 0.3s;">
+                        <div class="service-icon">
+                            <svg class="icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="service-title-card">Digital Operations Automation</h3>
+                        <p class="service-description">
+                            Automating repetitive tasks and streamlining workflows for increased efficiency.
+                        </p>
+                    </div>
+
+                    <div class="service-card animate-fade-in" style="animation-delay: 0.4s;">
+                        <div class="service-icon">
+                            <svg class="icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.747 0-3.332.477-4.5 1.253"></path></svg>
+                        </div>
+                        <h3 class="service-title-card">Technical Consulting</h3>
+                        <p class="service-description">
+                            Providing expert guidance and solutions for your technical challenges.
+                        </p>
+                    </div>
+
+                    <div class="service-card animate-fade-in" style="animation-delay: 0.5s;">
+                        <div class="service-icon">
+                            <svg class="icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.01 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                        </div>
+                        <h3 class="service-title-card">Content Management & SEO Basics</h3>
+                        <p class="service-description">
+                            Assisting with content population on CMS platforms and basic SEO optimization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container portfolio-content">
+                <h2 class="section-title">My Latest Work</h2>
+                <div class="line-gradient"></div>
+                <p class="section-subtitle">
+                    A showcase of my projects, demonstrating my expertise in development and design.
+                </p>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-card animate-fade-in">
+                        <img src="https://placehold.co/600x350/1E1E1E/00C9FF?text=Project+Nexus" alt="Project Nexus" class="portfolio-image">
+                        <div class="portfolio-card-body">
+                            <h3 class="portfolio-title-card">Project Nexus: Collaborative Platform</h3>
+                            <p class="portfolio-description-card">
+                                Developed a real-time collaborative web application with integrated communication tools.
+                            </p>
+                            <div class="portfolio-tags">
+                                <span class="tag tag-primary">React</span>
+                                <span class="tag tag-secondary">Node.js</span>
+                                <span class="tag tag-muted">WebSockets</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card animate-fade-in" style="animation-delay: 0.1s;">
+                        <img src="https://placehold.co/600x350/1E1E1E/FF00FF?text=Mobile+Finance+App" alt="Mobile Finance App" class="portfolio-image">
+                        <div class="portfolio-card-body">
+                            <h3 class="portfolio-title-card">Quantume Wallet: Secure Finance App</h3>
+                            <p class="portfolio-description-card">
+                                Designed and developed a secure mobile finance management application with a sleek UI.
+                            </p>
+                            <div class="portfolio-tags">
+                                <span class="tag tag-primary">Flutter</span>
+                                <span class="tag tag-secondary">Firebase</span>
+                                <span class="tag tag-muted">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card animate-fade-in" style="animation-delay: 0.2s;">
+                        <img src="https://placehold.co/600x350/1E1E1E/00C9FF?text=Data+Visualization+Tool" alt="Data Visualization Tool" class="portfolio-image">
+                        <div class="portfolio-card-body">
+                            <h3 class="portfolio-title-card">Aether Insights: Data Dashboard</h3>
+                            <p class="portfolio-description-card">
+                                Created an interactive data visualization dashboard for analyzing complex datasets.
+                            </p>
+                            <div class="portfolio-tags">
+                                <span class="tag tag-primary">Vue.js</span>
+                                <span class="tag tag-secondary">D3.js</span>
+                                <span class="tag tag-muted">Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container testimonials-content">
+                <h2 class="section-title text-white-force">What Clients Say</h2>
+                <div class="line-gradient bg-white-force"></div>
+                <p class="section-subtitle text-white-opacity">
+                    Hear from those who have experienced the impact of innovative technology solutions.
+                </p>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card animate-fade-in">
+                        <p class="testimonial-text">
+                            "Eliza's technical expertise and keen eye for design transformed our outdated system into a modern, efficient platform. Her work is truly exceptional."
+                        </p>
+                        <p class="testimonial-author">- John Doe, Tech Startup Founder</p>
+                    </div>
+
+                    <div class="testimonial-card animate-fade-in" style="animation-delay: 0.1s;">
+                        <p class="testimonial-text">
+                            "Her ability to quickly grasp complex requirements and deliver elegant code solutions was invaluable. A dedicated and highly skilled developer!"
+                        </p>
+                        <p class="testimonial-author">- Jane Smith, Senior Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container contact-content">
+                <h2 class="section-title">Let's Build Something Amazing!</h2>
+                <div class="line-gradient"></div>
+                <p class="section-subtitle">
+                    Ready to bring your ideas to life or need a tech-savvy hand? I'm eager to collaborate.
+                </p>
+
+                <div class="contact-card animate-fade-in">
+                    <h3 class="contact-title-card">Reach Out</h3>
+                    <div class="contact-details">
+                        <p>
+                            <strong>Email:</strong> <a href="mailto:eliza.m.abing@example.com" class="contact-link">eliza.m.abing@example.com</a>
+                        </p>
+                        <p>
+                            <strong>Phone:</strong> <a href="tel:+639123456789" class="contact-link">+63 912 345 6789</a>
+                        </p>
+                        <p>
+                            <strong>Location:</strong> Davao City, Philippines
+                        </p>
+                        <p>
+                            <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/eliza-marie-abing" target="_blank" class="contact-link">linkedin.com/in/eliza-marie-abing</a>
+                        </p>
+                        <p>
+                            <strong>GitHub:</strong> <a href="https://github.com/eliza-dev" target="_blank" class="contact-link">github.com/eliza-dev</a>
+                        </p>
+                    </div>
+                    <p class="contact-closing">
+                        I look forward to discussing how I can support your vision and drive digital success.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="footer-copy">&copy; 2025 Eliza Marie Abing. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about" class="footer-link">About</a>
+                <a href="#services" class="footer-link">Services</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
