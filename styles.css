@@ -196,6 +196,9 @@ section {
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.mobile-menu-dropdown.open {
+    display: block;
+}
 
 .mobile-menu-links {
     display: flex;
@@ -241,7 +244,7 @@ section {
     inset: 0;
     z-index: 0;
     opacity: 0.2;
-    background-image: url('https://placehold.co/1920x1080/0A0A0A/FFFFFF?text=Futuristic+Background'); /* Placeholder for futuristic background */
+    background-image: url('https://placehold.co/1920x1080/0A0A0A/FFFFFF?text=Eliza+Marie+Abing'); /* Placeholder for futuristic background */
     background-size: cover;
     background-position: center;
     filter: blur(5px);
@@ -341,7 +344,7 @@ section {
 
 .about-image-container {
     width: 100%; /* md:w-1/2 */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* shadow-lg */
     border-radius: 0.75rem; /* rounded-xl */
     border: 1px solid var(--primary-light);
 }
@@ -383,8 +386,6 @@ section {
     text-align: center;
 }
 
-.services-content {} /* uses .container */
-
 .services-grid {
     display: grid;
     grid-template-columns: 1fr; /* grid-cols-1 */
@@ -410,7 +411,7 @@ section {
     border: 1px solid var(--border-color);
 }
 .service-card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* hover:shadow-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* hover:shadow-xl */
     transform: translateY(-0.25rem); /* hover:-translate-y-1 */
 }
 
@@ -449,43 +450,42 @@ section {
 }
 
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* grid-cols-1 */
-    gap: 2rem; /* gap-8 */
-}
-@media (min-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
-    }
-}
-@media (min-width: 1024px) {
-    .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
-    }
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .portfolio-card {
-    background-color: #1E1E1E; /* surface-dark */
-    border-radius: 0.75rem; /* rounded-xl */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
-    overflow: hidden;
-    transition: all var(--transition-duration) ease-in-out;
-    border: 1px solid var(--border-color);
+    max-width: 320px;
+    margin: 1rem auto;
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+    background: var(--surface-dark, #232323);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .portfolio-card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* hover:shadow-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* hover:shadow-xl */
     transform: translateY(-0.25rem); /* hover:-translate-y-1 */
 }
 
 .portfolio-image {
     width: 100%;
-    height: 12rem; /* h-48 */
-    object-fit: cover;
+    max-width: 260px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .portfolio-card-body {
-    padding: 1.5rem; /* p-6 */
-    text-align: left;
+    padding: 0.75rem 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .portfolio-title-card {
@@ -559,7 +559,7 @@ section {
     border: 1px solid var(--secondary-light);
 }
 .testimonial-card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     transform: translateY(-0.25rem);
 }
 
@@ -632,16 +632,12 @@ section {
 .footer {
     background-color: #1F2937; /* gray-800 */
     color: #FFFFFF;
-    padding: 2rem 0; /* py-8 */
+    padding: 1rem 0; /* py-8 */
 }
 
 .footer-content {
     text-align: center;
     font-size: 0.875rem; /* text-sm */
-}
-
-.footer-copy {
-    margin-bottom: 1rem; /* mb-4 */
 }
 
 .footer-links {
@@ -687,4 +683,17 @@ section {
 }
 .line-gradient.bg-white-force { /* Specific for testimonials section */
     background: linear-gradient(to right, #FFFFFF, #E0E0E0);
+}
+
+.portfolio-feature-title {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.01em;
+}
+.text-cyan {
+    color: #00c9ff;
+}
+.text-magenta {
+    color: #ff00ff;
 }
